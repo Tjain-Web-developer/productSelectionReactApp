@@ -138,7 +138,7 @@ const ProductsCard = () => {
                     <div className={css.bottomBox}>
                         <div className={css.showPageCount}>
                             <i className="ri-arrow-left-s-line"></i>
-                            <p>{pageCount}/9</p>
+                            <p>{pageCount}/{maxPageCount}</p>
                             <i className="ri-arrow-right-s-line"></i>
                         </div>
                         <div className={css.buttonWrap}>
