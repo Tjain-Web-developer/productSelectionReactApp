@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getAllProducts, sendSelectedProducts } from "../../redux/slices/productSlice.js";
 import css from "./ProductsCard.module.css";
 import loader from '../../assets/loader.gif';
+import logo from '../../assets/logo.png';
 
 // currently assuming number of pages is 9
 const maxPageCount = 9;
@@ -82,14 +83,14 @@ const ProductsCard = () => {
             <div className={css.parent}>
                 <div className={css.imageBox}>
                     <img
-                        src="https://images.unsplash.com/photo-1656428361267-b309fd9b20f5?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        src="https://s3-alpha-sig.figma.com/img/2c4e/6859/02df4b6fa5a5719dc3c86c2c7b184fe8?Expires=1704067200&Signature=OQ9Ba6SFoyzKAvSBlWHUqH72X4yUCbOe822pcU0OuptPmMm2us6O9cGGq7246JKqNK0rbWMLuXAC2YeyOSSaD1DEVPatvRs6IOqu4r1HVwPKsEXyTsHp69uillN9Blf36bl5wMySORU~tR14JApuF0qI-0Ieqh2iUAQr2OaS4by5SFS-JX~VA6twLKyjjdp3v5udEWDSs80IAptoILaoVGX6UZtw1uP6-No2BpNSzvobRNBfornIpl8RwOfDRiCU9H7V9B4N6hkV0OF8bk7sTl07E4lmRHt3SJjFa8kTKdrEbM8A-H9~~9hodNUDCJqN2mbiICfsVspjqkcJKEVTUQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                         alt=""
                     />
                 </div>
                 <div className={css.contentBox}>
                     <div className={css.contentHeader}>
                         <div className={css.logoBox}>
-                            <img src="https://images.unsplash.com/photo-1619679505795-a4d0e6be5e02?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                            <img src={logo} alt="" />
                         </div>
                         <div className={css.headerTextWrap}>
                             <div>
